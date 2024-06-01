@@ -369,3 +369,31 @@ progress h5{
 .progress:nth-child(4) .inner-row{
     width: 40%;
 }
+/*Projects*/
+.portfolio-tabs{
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.tab-active{
+    background: var(--primary-white);
+    color: var(--primary-bg);
+}
+.portfolio-projects{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 3%;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.project-action-area{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
