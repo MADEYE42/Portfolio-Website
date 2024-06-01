@@ -24,3 +24,8 @@ window.addEventListener('load',()=>{
     })
     })
 })
+
+window.addEventListener('scroll',()=>{
+    let nav = document.querySelector('nav');
+    nav.classList.toggle('navscroll',window.scrollY>0);
+})

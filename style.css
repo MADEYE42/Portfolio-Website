@@ -157,7 +157,10 @@ nav{
 .nav-links li a:hover{
    transform: translateY(-.5rem);
 }
-.nb
+.nav-scroll{
+    background: var(--primary-color);
+    box-shadow:  0 0 1rem rgba(0,0,0,.4);
+}
 /*Header*/
 header{
     height: 100vh;
