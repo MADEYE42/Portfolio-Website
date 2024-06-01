@@ -189,6 +189,7 @@ header{
 }
 .header-left h2{
     max-width: 1rem 0;
+    margin: 10px 0;
 }
 .header-left{
     margin:1rem 0px;
@@ -201,6 +202,9 @@ header{
     font-size: 19px;
     width: 94%;
     margin: .5rem 0 2rem;
+}
+.header-left h1{
+    margin: 10px 0;
 }
 .header-right{
     position: relative;
