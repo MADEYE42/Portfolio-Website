@@ -153,6 +153,8 @@ nav{
     font-size: 17px;
     transition: var(--transition);
     display: inline-block;
+    text-decoration: none;
+    list-style: none;
 }
 .nav-links li a:hover{
    transform: translateY(-.5rem);
@@ -160,6 +162,9 @@ nav{
 .nav-scroll{
     background: var(--primary-color);
     box-shadow:  0 0 1rem rgba(0,0,0,.4);
+}
+.nav-links li{
+    list-style: none;
 }
 /*Header*/
 header{
