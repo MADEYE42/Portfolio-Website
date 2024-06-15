@@ -8,10 +8,10 @@
     border: none;
 }
 :root{
-    --primary-color :#6b69d6;
-    --primary-bg :#1b1b42;
-    --primary-bg2 :#4f4d9e;
-    --primary-bg3 :#4f4d9e50;
+    --primary-color :#69d6b2;
+    --primary-bg :#1b423c;
+    --primary-bg2 :#4d9e97;
+    --primary-bg3 :#4d9e9150;
     --primary-white :#ffffff;
     --primary-light :#f5f5f5;
     --transition: .4s ease;
@@ -459,5 +459,5 @@ form input::placeholder,textarea::placeholder{
 footer{
     text-align: center;
     padding: 1rem;
-    background: #6b69d6;
+    background: #69d6cd;
 }
