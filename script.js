@@ -29,3 +29,9 @@ window.addEventListener('scroll',()=>{
     let nav = document.querySelector('nav');
     nav.classList.toggle('navscroll',window.scrollY>0);
 })
+
+let menuBar = document.querySelector('.menu-bar')
+let menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener('click',()=>{
+    menuBar.classList.toggle('menu-none')
+})

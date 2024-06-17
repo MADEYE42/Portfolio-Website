@@ -476,17 +476,25 @@ footer{
 }
 
 @media (max-width:1200px) {
+
     h1{
         font-size: 46px;
     }   
     
 }
 @media (max-width:1024px) {
+    section>p{
+        width: 60%;
+    }
     .nav{
         background: var(--primary-color);
     }
     .nav-links{
         display: none;
+    }
+    .menu-none{
+        bottom: -100%;
+        transition: var(--transition);
     }
     .menu-button{
         display: inline-block;
@@ -504,6 +512,7 @@ footer{
         justify-content: center;
         background: var(--primary-color);
         z-index: 2;
+        transition: var(--transition);
     }
     .menubar-container{
         display: flex;
@@ -514,6 +523,140 @@ footer{
     }
     .menubar-container a{
         font-size: 1.6rem;
+        transition: var(--transition);
+    }
+    .menubar-container a:hover{
+        transform: scale(1.2);
+    }
+    header{
+        height: 90vh;
 
+    }
+    .header-container{
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+    .header-container::after{
+        right: -951%;
+    }
+    .header-right{
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        grid-row: 1;
+    }
+    .moon{
+        right: 45px;
+    }
+    .about-container{
+        width: 80%;
+    }
+    .about-cards{
+        gap: 2%;
+    }
+    .portfolio-projects{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container-contact{
+        width: 70%;
+    }
+
+}
+@media (max-width:600px) {
+    h1{
+        font-size: 6px;
+    }
+    nav{
+        height: 4rem;
+    }
+    .logo h3{
+        font-size: 1.5rem;
+    }
+    .menu-button{
+        font-size: 1.5rem;
+    }
+    .menubar-container a{
+        font-size: 1.3rem;
+    }
+    .menubar-container{
+        gap: 1rem;
+        justify-content: space-between;
+
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    h3{
+        font: size 1.3em;
+    }
+    button{
+        padding: 12px 26px;
+    }
+    p{
+        font-size: 16px;
+    }
+    header{
+        height: 100vh;
+    }
+    .header-right{
+        height: 280px;
+        width: 280px;
+    }
+    .moon{
+        height: 1.5rem;
+        width: 1.5rem;
+        right: 20px;
+        top: 35px;
+    }
+    .header-container{
+        padding:0;
+
+    }
+    .header-container p{
+        width: 100%;
+    }
+    .hireMe{
+        display: none;
+    }
+    .social-links{
+        justify-content: center;
+        position: relative;
+    }
+    .header-left{
+        padding-top: 4rem;
+    }
+    .about-container{
+        width: 90%;
+    }
+    .about-cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 4%;
+    }
+    .skills-container{
+        grid-template-columns: 1fr;
+    }
+    .skills-container p{
+        margin-top: 2rem;
+    }
+    .portfolio-tabs{
+        gap: 1rem;
+    }
+    .portfolio-projects .btn-sm{
+        padding: 8px 18px !important;
+    }
+    .portfolio-projects{
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
+    }
+    .container-contact{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .contact-left{
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 2rem;
     }
 }
