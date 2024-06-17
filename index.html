@@ -252,10 +252,11 @@
                 <a href="" class="btn btn-white"><i class="fab fa-github"></i></a>
             </div>
             <div class="contact-right">
-                <form action="#">
-                    <input type="text" required placeholder="Your Name">
-                    <input type="email" required placeholder="Your Email">
-                    <textarea name="message" cols="30" rows="4" required placeholder="Your Message"></textarea>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a8661bf2-26cf-46b5-818d-ab5baadedb24">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                    <textarea id="message" name="message" name="message" cols="30" rows="4" required placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn-white">Send</button>
                 </form>
             </div>
@@ -265,5 +266,20 @@
         <h4>Thank You <i class="fa-regular fa-face-smile"></i> for visiting my site </h4>
     </footer>
     <script src="script.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "gmadye13@gmail.com",
+                Password: "password",
+                To: 'gmadye13@gmail.com',
+                From: document.getElementById('email').value,
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
 </body>
 </html>
