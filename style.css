@@ -289,6 +289,9 @@ header{
 #about{
     background:var(--primary-bg3);
 }
+#about p{
+    margin-bottom: 15px;
+}
 .about-container{
     width: 70%;
 }
@@ -381,6 +384,9 @@ progress h5{
 }
 .progress:nth-child(4) .inner-row{
     width: 40%;
+}
+.progress:nth-child(5) .inner-row{
+    width: 70%;
 }
 /*Projects*/
 .portfolio-tabs{
