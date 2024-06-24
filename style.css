@@ -282,11 +282,13 @@ header{
 }
 .hireMe{
     position: absolute;
-    bottom: 2rem;
-    text-decoration: underline;
+    bottom: 1rem;
     right: 0;
     font-size: 17px;
     transition: var(--transition);
+    padding: 1rem 2rem;
+    background:var(--primary-bg) ;
+    border-radius: 10px;
 }
 .hireMe:hover{
     transform: translateY(-.5rem);
@@ -329,6 +331,7 @@ header{
     margin-top: 2rem;
     margin-bottom: 1rem;    
 }
+
 /*Skills*/
 .skills-container{
     display: grid;
@@ -469,11 +472,35 @@ form input,textarea{
 form input::placeholder,textarea::placeholder{
     color: var(--primary-white);
 }
-footer{
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    background: #69d6cd;
+    font-size: 14px;
+    color: #333;
 }
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #1b423c;
+}
+
+.footer-bottom {
+    font-size: 12px;
+    color: #777;
+}
+
 
 @media (max-width:1200px) {
 
