@@ -441,6 +441,9 @@ progress h5{
 .project p{
     margin: 10px 0;
 }
+.project img{
+    border-radius: .8rem;
+}
 /*Contact*/
 .container-contact{
     width: 60%;
