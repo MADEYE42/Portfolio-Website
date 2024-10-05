@@ -24,6 +24,7 @@ html{
 body{
     background:var(--primary-bg);
     color: var(--primary-light);
+    height: fit-content;
 }
 h1{
     font-size: 60px;
@@ -481,6 +482,7 @@ footer {
     text-align: center;
     font-size: 14px;
     color: #333;
+    
 }
 
 .footer-content {
